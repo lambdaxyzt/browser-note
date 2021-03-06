@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: Roboto;
+}
+
+header {
+    text-align: center;
+}
+
+.hr-header {
+    border-color:black ;
+    border-width: 2px;
+    border-style: dashed;
+}
+
+div.note { 
+    display: flex;
+    min-height: 50vh;
+}
+
+.note__input {
+    align-self: center;
+} 
+
+.note__input form {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.note__input textarea {
+    padding: 20px;
+    max-width:200px ;
+    text-align: center;
+}
+
+.note__input textarea:focus {
+    background-color: grey;
+    color: white;
+}
+
+
+.note__add {
+    display: block;
+    margin : 5px 0px;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+.note__list {
+    flex: 1;
+    padding: 0px 100px;
+}
+
+.note__list--ul {
+    list-style: none;
+}
+
+.note__list--li {
+    display: flex;
+    margin: 20px;
+    padding-bottom: 2px;
+    border-bottom:2px red solid;
+}
+
+.note__list--li span {
+    flex: 1;
+}
+
+.remove-btn {
+    user-select: none;
+    text-align: center;
+    color: black;
+    padding: 2px;
+    border-radius: 50%;
+    width: 20px;
+    cursor: pointer;
+    float: right;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  20px 20px 60px #bebebe,-20px -20px 60px #ffffff;
+}
+
+.remove-btn:active {
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+
+}
